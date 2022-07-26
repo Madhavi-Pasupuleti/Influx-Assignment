@@ -1,4 +1,258 @@
 body{
-    font-family: 'Roboto', sans-serif;
-    color: white;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(38,38,38);
+  color: white;
 }
+.main{
+  background-image: url("background.jpg");
+  width: 85%;
+  margin: auto;
+}
+.none{
+  background: none;
+  border: none;
+}
+.img_card > img{
+  width: 70px;
+  border-radius: 90%;   
+}
+.profile{
+  background-color: rgb(140,33,49);
+  height: 300px;
+}
+.btn{
+  width: 40%;
+  background-color: white;
+  padding: 0%;
+  border-radius: 30px;
+}
+.links{
+  background-color: rgb(118,112,108);
+}
+
+.crd{
+  color: black;
+}
+.crd-head{
+  display: flex;
+  justify-content: space-between;
+}
+.gold_h3{
+  color: orange;
+  font-weight: bolder;
+}
+.left > h3{
+  margin-top: -15px;
+}
+.right > h5{
+  margin-top: -10px;
+}
+.right > p{
+  font-size: 13px;
+}
+.num {
+  text-align: right;
+}
+ 
+.prl_btn {
+  display: inline-block;
+  font-size:0.7em;
+  /* padding:0.6em 0.5em;
+  text-decoration:none; */
+}
+.parallelogrm{
+  margin-left: 15px;
+  width: 30%;
+  height: 50px;
+  transform: skew(-30deg);
+  background-color: rgb(140,33,49);
+  color: white;
+}
+.skew_fix{
+  display:inline-block;
+  transform: skew(30deg);
+}
+
+.rewards_link{
+  color: rgb(140,33,49);
+  float: right;
+}
+.rewards_link:hover{
+  color: rgb(140,33,49);
+}
+
+/*-----------Food and Beverage --------*/
+.fb_h4{
+  font-weight: bold;
+}
+/* -------------- Range Slider -------------- */
+.range-slider{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#range { 
+  -webkit-appearance: none;
+  width: 100%; 
+  border-radius: 10px;
+}
+#range:focus { outline: none; }
+
+#range::before, #range::after {
+  position: absolute;
+  top: 2rem;
+  color: #333;
+  font-size: 14px;
+  line-height: 1;
+  padding: 3px 5px;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 4px;
+}
+#range::before { left: 0; content: attr(data-min); }
+#range::after { right: 0; content: attr(data-max); }
+
+#range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1rem;
+  cursor: pointer;
+  animation-duration: 0.2s;
+  background: linear-gradient(90deg,  rgb(140,33,49)var(--range-progress), #dee4ec var(--range-progress));
+  border-radius: 1rem;
+}
+#range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 0.25rem solid  rgb(140,33,49);
+  box-shadow: 0 1px 3px rgba(0,0,255,.3);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  height: 32px; width: 32px;
+  transform: translateY(calc(-50% + 8px));
+}
+
+#tooltip {
+  position: absolute;
+  top: -2.25rem;
+}
+#tooltip span {
+  position: absolute;
+  text-align: center;
+  display: block;
+  line-height: 1;
+  padding: 0.125rem 0.25rem;
+  color: #fff;
+  border-radius: 0.125rem;
+  background:  rgb(140,33,49);
+  font-size: 1.25rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#tooltip span:before {
+  position: absolute;
+  content: "";
+  left: 50%; bottom: -8px;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border: 4px solid transparent;
+  border-top-color:  rgb(140,33,49);
+}
+
+/*___________________________________________________ */
+
+.fb_p1{
+  font-size: 13px;
+  color: #dee4ec;
+}
+.fb_p2{
+  font-size: 12px;
+  color: grey;
+}
+.fb_p3{
+  font-size: 13px;
+}
+.fb_btn{
+  width: 35%;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(140,33,49);
+}
+
+.gold{
+  color : orange
+} 
+.tickets{
+  display: flex;
+  justify-content: space-between;
+}
+.tickets p:nth-child(2){
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.circle_div{
+  border-radius: 50%;
+}
+.outer_circle{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(140,33,49);
+}
+.inner_circle{
+  transform: translate(25%, 25%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+.inner_circle > h2{
+  color: rgb(140,33,49);
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.inner_circle p {
+  color: rgb(140,33,49);
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/*------------ Available Rewards -------------*/
+.avail_h4{
+  font-weight: bold;
+}
+.line{
+  display: flex;
+  flex-direction: row;
+  color: grey;
+}
+.line:before, .line:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+}
+.line:before {
+  margin-right: 10px
+}
+.line:after {
+  margin-left: 10px
+}
+.redeem_btn{
+  width: 90%;
+  background-color: rgb(140,33,49);
+  color: white;
+  font-size: 13px;
+}
+.gold_bnf{
+  background-color: rgb(140,33,49);
+}
+
+
+ 
+ 
