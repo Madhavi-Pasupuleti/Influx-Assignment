@@ -14,19 +14,37 @@ body{
 }
 .img_card > img{
   width: 70px;
-  border-radius: 90%;   
+  border-radius: 90%;  
+  margin-top: -20px; 
 }
 .profile{
   background-color: rgb(140,33,49);
   height: 300px;
 }
-.btn{
-  width: 40%;
-  background-color: white;
+.profile_name{
+  font-size: small;
+  font-weight: bold;
+}
+.profile_eml{
+  font-size: small;
+  margin-top: -15px;
+}
+.profile_eml+button{
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -20px;
   padding: 0%;
+  background-color: white;
   border-radius: 30px;
 }
+.lifetime_points{
+  font-size: 12px;
+  text-align: left;
+  margin-left: -20px;
+}
+ 
 .links{
+  font-size: small;
   background-color: rgb(118,112,108);
 }
 
@@ -243,14 +261,39 @@ body{
 .line:after {
   margin-left: 10px
 }
+.avail_p1{
+  font-size: 11px;
+  color: grey;
+  margin-top: -8px;
+}
 .redeem_btn{
   width: 90%;
   background-color: rgb(140,33,49);
   color: white;
-  font-size: 13px;
+  font-size: 11px;
 }
+.avail_p2{
+  font-size: 11px;
+  color: red;
+  margin-top: -8px;
+}
+
+/* -------- Gold Benefits ----------*/
 .gold_bnf{
   background-color: rgb(140,33,49);
+}
+.gold_h4{
+  font-weight: bold;
+}
+.gold_h5{
+  font-size: large;
+  font-weight: bold;
+}
+.gold_p{
+  font-size: small;
+}
+.gold_btn{
+  font-size: 12px;
 }
 
 
