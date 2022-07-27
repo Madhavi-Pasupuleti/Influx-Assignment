@@ -4,7 +4,7 @@ body{
   color: white;
 }
 .main{
-  background-image: url("background.jpg");
+  background-image: url("./images/background.jpg");
   width: 85%;
   margin: auto;
 }
@@ -19,7 +19,8 @@ body{
 }
 .profile{
   background-color: rgb(140,33,49);
-  height: 300px;
+  height: 240px;
+  background: linear-gradient(120deg, rgb(38,38,38) 25px, rgb(140,33,49) 0)
 }
 .profile_name{
   font-size: small;
@@ -46,8 +47,12 @@ body{
 .links{
   font-size: small;
   background-color: rgb(118,112,108);
+  background: 
+  linear-gradient(120deg, rgb(140,33,49) 25px, rgb(118,112,108) 0)top left,
+  linear-gradient(-50deg, rgb(44, 44, 44) 25px, rgb(118,112,108) 0)bottom left;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
 }
-
 .crd{
   color: black;
 }
@@ -75,8 +80,7 @@ body{
 .prl_btn {
   display: inline-block;
   font-size:0.7em;
-  /* padding:0.6em 0.5em;
-  text-decoration:none; */
+  cursor: pointer;
 }
 .parallelogrm{
   margin-left: 15px;
@@ -279,8 +283,18 @@ body{
 }
 
 /* -------- Gold Benefits ----------*/
+.gold_benefits{
+  max-width: 680px;
+}
 .gold_bnf{
   background-color: rgb(140,33,49);
+}
+.cut{
+  background: 
+  linear-gradient(125deg, rgb(49, 45, 45) 35px, rgb(140,33,49) 0)top left,
+  linear-gradient(-45deg, rgb(90, 89, 89) 35px, rgb(140,33,49) 0)bottom left;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
 }
 .gold_h4{
   font-weight: bold;
