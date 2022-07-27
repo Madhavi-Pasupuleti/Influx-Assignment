@@ -8,6 +8,7 @@ body{
   width: 85%;
   margin: auto;
 }
+/* ---------- Profile -----------*/
 .none{
   background: none;
   border: none;
@@ -20,7 +21,7 @@ body{
 .profile{
   background-color: rgb(140,33,49);
   height: 240px;
-  background: linear-gradient(120deg, rgb(38,38,38) 25px, rgb(140,33,49) 0)
+  background: linear-gradient(120deg, rgb(32, 32, 32) 25px, rgb(140,33,49) 0)
 }
 .profile_name{
   font-size: small;
@@ -49,9 +50,22 @@ body{
   background-color: rgb(118,112,108);
   background: 
   linear-gradient(120deg, rgb(140,33,49) 25px, rgb(118,112,108) 0)top left,
-  linear-gradient(-50deg, rgb(44, 44, 44) 25px, rgb(118,112,108) 0)bottom left;
+  linear-gradient(-50deg, rgb(45, 45, 45) 25px, rgb(118,112,108) 0)bottom left;
   background-size: 100% 50%;
   background-repeat: no-repeat;
+}
+
+@media only screen and  (max-width : 375px){
+   
+  .links{
+    border: 2px solid red;
+    background-color: aquamarine;
+  }
+}
+
+/*------------CMX Rewards --------------*/
+.cmx_h2{
+  margin-top: -10px;
 }
 .crd{
   color: black;
@@ -62,16 +76,19 @@ body{
 }
 .gold_h3{
   color: orange;
-  font-weight: bolder;
 }
 .left > h3{
   margin-top: -15px;
+}
+.left > p{
+  font-size: small;
+  
 }
 .right > h5{
   margin-top: -10px;
 }
 .right > p{
-  font-size: 13px;
+  font-size: small;
 }
 .num {
   text-align: right;
@@ -104,9 +121,7 @@ body{
 }
 
 /*-----------Food and Beverage --------*/
-.fb_h4{
-  font-weight: bold;
-}
+ 
 /* -------------- Range Slider -------------- */
 .range-slider{
   width: 100%;
@@ -185,7 +200,7 @@ body{
 /*___________________________________________________ */
 
 .fb_p1{
-  font-size: 13px;
+  font-size: small;
   color: #dee4ec;
 }
 .fb_p2{
@@ -198,8 +213,15 @@ body{
 .fb_btn{
   width: 35%;
   font-size: 12px;
-  font-weight: bold;
+  background-color: white;
   color: rgb(140,33,49);
+  border-radius: 15px;
+  border: none;
+  transition : all 0.5s ease;
+}
+.fb_btn:hover{
+  background-color: rgb(140,33,49);
+  border: none;
 }
 
 .gold{
@@ -245,9 +267,7 @@ body{
 }
 
 /*------------ Available Rewards -------------*/
-.avail_h4{
-  font-weight: bold;
-}
+ 
 .line{
   display: flex;
   flex-direction: row;
@@ -284,24 +304,23 @@ body{
 
 /* -------- Gold Benefits ----------*/
 .gold_benefits{
-  max-width: 680px;
+  max-width: 650px;
+  margin: auto;
+  margin-left: 10px;
 }
 .gold_bnf{
   background-color: rgb(140,33,49);
 }
 .cut{
   background: 
-  linear-gradient(125deg, rgb(49, 45, 45) 35px, rgb(140,33,49) 0)top left,
-  linear-gradient(-45deg, rgb(90, 89, 89) 35px, rgb(140,33,49) 0)bottom left;
+  linear-gradient(130deg, rgb(49, 45, 45) 35px, rgb(140,33,49) 0)top left,
+  linear-gradient(-50deg, rgb(90, 89, 89) 35px, rgb(140,33,49) 0)bottom left;
   background-size: 100% 50%;
   background-repeat: no-repeat;
 }
-.gold_h4{
-  font-weight: bold;
-}
+ 
 .gold_h5{
   font-size: large;
-  font-weight: bold;
 }
 .gold_p{
   font-size: small;
